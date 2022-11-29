@@ -1,0 +1,133 @@
+color: #fff; background about
+color: #171717; background experince
+color: #ff6600;   color icons, text main
+color: #ff781f;   color hover
+
+.about-main {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+/* Image block  start*/
+.about-images {
+    position: relative;
+    z-index: 2;
+    padding: 2rem 8rem;
+    width: 40%;
+}
+
+/* Image personal */
+.about-images img {
+    z-index: 1;
+    max-width: 100%;
+    width: 480px;
+    object-fit: cover;
+}
+
+/* frame Image */
+.about-main .about-images::after {
+    border: 7px solid #ff781f;
+    content: " ";
+    right: 1rem;
+    position: absolute;
+    top: -2rem;
+    height: 60%;
+    width: 50%;
+    z-index: -1;
+}
+
+/* Image block  end*/
+/*--About  Button start --*/
+.resume-button {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.resume-button button {
+    background-color: #ff6600;
+    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 1rem 1.75rem;
+    cursor: pointer;
+}
+
+/* hover button resume */
+.resume-button button:hover {
+    color: #fff;
+    background-color: #ff781f;
+}
+
+/*--About  Button end --*/
+/*---------------------------- title text ----------------------------*/
+.about-section-text {
+    margin-left: 10rem;
+}
+
+/* text header about */
+.about-title-text {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    background: red;
+    background-image: linear-gradient(45deg, #ff6600, red);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* text detail about */
+.about-title p {
+    width: 70%;
+    line-height: 1.5;
+}
+
+/*-- list personal information start --*/
+.about-text {
+    display: flex;
+    padding: 1rem 0;
+    color: #ff6600;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.about-text span {
+    padding-left: .3rem;
+    color: #000;
+}
+
+
+/* about picture */
+    .about-main {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .about-main .about-images::after {
+        display: none;
+    }
+
+    .about-images {
+        width: 50%;
+        align-self: center;
+        padding: 0;
+    }
+
+    /* ----------------about section text start---------------- */
+    .about-section-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about-section-text p {
+        width: 98%;
+    }
+
+    .about-text {
+        flex-direction: column;
+    }
+ 
